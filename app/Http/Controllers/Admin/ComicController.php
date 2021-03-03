@@ -26,7 +26,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.comics.create');
     }
 
     /**
@@ -37,7 +37,23 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validazione = $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+            'art_by' => 'required',
+            'written_by' => 'required',
+            'series' => 'required',
+            'price' => 'required',
+            'on_sale_date' => 'required',
+            'volume' => 'required',
+            'trim_size' => 'required',
+            'page' => 'required',
+            'rated' => 'required',
+        ]);
+
+        Comic::create($validazione);  
+
+        return redirect()->route('admin.comics.index');
     }
 
     /**
@@ -48,7 +64,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        return view('admin.comics.show', compact('comic'));
     }
 
     /**
@@ -59,7 +75,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('admin.comics.edit', compact('comic'));
     }
 
     /**
@@ -71,7 +87,23 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $validazione = $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+            'art_by' => 'required',
+            'written_by' => 'required',
+            'series' => 'required',
+            'price' => 'required',
+            'on_sale_date' => 'required',
+            'volume' => 'required',
+            'trim_size' => 'required',
+            'page' => 'required',
+            'rated' => 'required',
+        ]);
+
+        $comic->update($validazione); 
+
+        return redirect()->route('admin.comics.index');
     }
 
     /**
@@ -82,6 +114,9 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+
+        $comic->delete();
+        return redirect()->route('admin.posts.index');
+
     }
 }
