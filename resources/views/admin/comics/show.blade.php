@@ -3,7 +3,9 @@
 @section('content')
 <h1><strong>TITOLO: </strong>{{ $comic->title}}</h1>
 <p><strong>DESCRIPTION: </strong>{{ $comic->body}}</p>
-
+@if($comic->cover)
+    <img src="{{asset('storage/' . $comic->cover)}}" alt="">
+@endif
 <p><strong>ART BY: </strong>{{ $comic->art_by}}</p>
 <p><strong>WRITTEN BY: </strong>{{ $comic->written_by}}</p>
 <p><strong>SERIES: </strong>{{ $comic->series}}</p>

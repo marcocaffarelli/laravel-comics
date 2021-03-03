@@ -11,7 +11,7 @@
     </div>
 @endif
         <div class="container_form d-flex">
-            <form action="{{route('admin.comics.store')}}" method="post">
+            <form action="{{route('admin.comics.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div>
                     <label for="title">TITOLO</label><br>
@@ -28,9 +28,14 @@
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div>
-
-
-
+                <div class="form-group">
+                  <label for="cover"></label>
+                  <input type="file" class="form-control-file" name="cover" id="cover" placeholder="Inserisci un immagine" aria-describedby="fileHelpId">
+                  <small id="coverHelper" class="form-text text-muted">Inserisci un immagine</small>
+                </div>
+                @error('cover')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div>
                     <label for="art_by">ART BY</label><br>
                     <input type="text" id="art_by" name="art_by" placeholder="Art by">

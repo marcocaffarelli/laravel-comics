@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Comic;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ComicController extends Controller
 {
@@ -40,6 +41,7 @@ class ComicController extends Controller
         $validazione = $request->validate([
             'title' => 'required',
             'body' => 'required',
+            'cover' => 'nullable | image | max:150',
             'art_by' => 'required',
             'written_by' => 'required',
             'series' => 'required',
@@ -49,11 +51,17 @@ class ComicController extends Controller
             'trim_size' => 'required',
             'page' => 'required',
             'rated' => 'required',
+            
         ]);
+
+        $cover = Storage::put('cover', $request->cover);
+        $validazione['cover'] = $cover;
 
         Comic::create($validazione);  
 
-        return redirect()->route('admin.comics.index');
+        $new_comic = Comic::orderBy('id', 'desc')->first();
+
+        return redirect()->route('admin.comics.index', $new_comic);
     }
 
     /**
