@@ -15,6 +15,9 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,10 +25,28 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+            <div class="container d-flex">
+                <div>
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        LOGO
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="d-flex">
+                        <li><a href="#">CHARACTERS</a></li>
+                        <li><a href="#">COMICS</a></li>
+                        <li><a href="#">MOVIES</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">GAMES</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">SHOP <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </div>
+                
+                
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
