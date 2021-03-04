@@ -108,6 +108,22 @@
                     <li><i class="fas fa-map-marker-alt"></i><span>COMIC SHOP LOCATOR</span></li>
                 </ul>
             </div>
+            <div class="parte_centrale_footer">
+
+            </div>
+            <div class="parte_inferiore_footer">
+                <div class="parte_inferiore_container d-flex">
+                    <div>SIGN-UP NOW!</div>
+                    <div>
+                        <span>FOLLOW US</span>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         </footer>
     </div>

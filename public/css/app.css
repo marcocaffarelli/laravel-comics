@@ -192,8 +192,12 @@
 }
 
 footer .container_footer {
+  background-image: url(/images/sfondo4.jpg?c2384e68c26f32fae2f41e72fc211b11);
   background-color: black;
-  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 800px;
   width: 100%;
 }
 
@@ -226,6 +230,42 @@ footer .container_footer .parte_superiore_footer ul li i {
 footer .container_footer .parte_superiore_footer ul li:last-child {
   display: flex;
   align-items: center;
+}
+
+footer .container_footer .parte_centrale_footer {
+  height: 500px;
+}
+
+footer .container_footer .parte_inferiore_footer {
+  background-color: black;
+  height: 100px;
+}
+
+footer .container_footer .parte_inferiore_footer .parte_inferiore_container {
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+footer .container_footer .parte_inferiore_footer .parte_inferiore_container div:first-child {
+  color: white;
+  border: 3px solid #ec1923;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .container_footer .parte_inferiore_footer .parte_inferiore_container div:last-child {
+  color: #ec1923;
+}
+
+footer .container_footer .parte_inferiore_footer .parte_inferiore_container div:last-child span,
+footer .container_footer .parte_inferiore_footer .parte_inferiore_container div:last-child i {
+  font-weight: bold;
+  margin: 0 10px;
+  font-size: 20px;
 }
 
 /*!
