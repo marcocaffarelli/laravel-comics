@@ -25,6 +25,17 @@
 </head>
 <body>
     <div class="app_blade">
+        <nav class="first_nav">
+            <div>
+                <ul class="d-flex">
+                    <li><img src="../img/logo.jpg" alt=""></li>
+                    <li><img src="../img/logo universe.png" alt=""></li>
+                    <li><img src="../img/logo store.png" alt=""></li>
+                    <li><img src="../img/marvel studio.png" alt=""></li>
+                    <li><img src="../img/logo cinematic.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container d-flex">
                 <div>
@@ -33,10 +44,10 @@
                     </a>
                 </div>
 
-                <div>
+                <div class="link_nav">
                     <ul class="d-flex">
                         <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="#">COMICS</a></li>
+                        <li><a href="{{route('comics_api')}}">COMICS</a></li>
                         <li><a href="#">MOVIES</a></li>
                         <li><a href="#">TV</a></li>
                         <li><a href="#">GAMES</a></li>

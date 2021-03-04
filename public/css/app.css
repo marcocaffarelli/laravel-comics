@@ -1,5 +1,66 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+.first_nav {
+  background-color: black;
+  height: 50px;
+  width: 100vw;
+}
+
+.first_nav div ul {
+  justify-content: flex-end;
+}
+
+.first_nav div ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 17%;
+  height: 100%;
+}
+
+.first_nav div ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-color: transparent transparent transparent #ec1923;
+  border-style: solid;
+  border-width: 2px;
+  transform: skewX(-15deg);
+}
+
+.first_nav div ul li img {
+  height: 50px;
+}
+
+.link_nav {
+  width: 100%;
+  height: 100%;
+}
+
+.link_nav ul {
+  margin-top: 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.link_nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.link_nav ul li a {
+  color: black;
+  font-weight: bold;
+}
+
+.link_nav ul li a:hover {
+  text-decoration: none;
+}
+
 .comics_vue h1 {
   text-align: center;
   color: white;
@@ -23,9 +84,14 @@
 }
 
 .comics_vue .lista_uscite ul li {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
   list-style: none;
   color: lightgrey;
+}
+
+.comics_vue .lista_uscite ul li:first-child {
+  color: #ec1923;
 }
 
 .comics_vue .lista_uscite ul li a {

@@ -17,9 +17,13 @@
             justify-content:flex-end;
             margin-right: 15%;
             li{
-                font-size: 10px;
+                font-size: 12px;
+                font-weight: bold;
                 list-style: none;
                 color: lightgrey;
+                &:first-child{
+                    color: rgb(236, 25, 35);
+                }
                 a{
                     text-decoration: none;
                     margin: 0 5px;
