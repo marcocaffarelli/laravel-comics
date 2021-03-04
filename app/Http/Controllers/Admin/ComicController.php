@@ -98,6 +98,7 @@ class ComicController extends Controller
         $validazione = $request->validate([
             'title' => 'required',
             'body' => 'required',
+            'cover' => 'nullable | mimes:jpeg,png,jpg,gif,svg | max:150',
             'art_by' => 'required',
             'written_by' => 'required',
             'series' => 'required',
@@ -108,6 +109,9 @@ class ComicController extends Controller
             'page' => 'required',
             'rated' => 'required',
         ]);
+        
+        $cover = Storage::put('cover', $request->cover);
+        $validazione['cover'] = $cover;
 
         $comic->update($validazione); 
 
@@ -124,7 +128,7 @@ class ComicController extends Controller
     {
 
         $comic->delete();
-        return redirect()->route('admin.posts.index');
+        return redirect()->route('admin.comics.index');
 
     }
 }

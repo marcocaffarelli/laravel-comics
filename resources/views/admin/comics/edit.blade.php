@@ -2,7 +2,7 @@
     <div class="edit d-flex">
         <h1>EDIT</h1>
         <div class="container_form d-flex">
-            <form action="{{route('admin.comics.update', ['comic'=> $comic->id])}}" method="post">
+            <form action="{{route('admin.comics.update', ['comic'=> $comic->id])}}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div>
@@ -19,7 +19,14 @@
                 @error('body')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
-
+                 <div class="form-group">
+                  <label for="cover"></label>
+                  <input type="file" class="form-control-file" name="cover" id="cover" placeholder="Inserisci un immagine" aria-describedby="fileHelpId">
+                  <small id="coverHelper" class="form-text text-muted">Inserisci un immagine</small>
+                </div>
+                @error('cover')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div>
                     <label for="art_by">ART BY</label><br>
                     <input type="text" id="art_by" name="art_by" placeholder="Art by" value="{{$comic->art_by}}">
