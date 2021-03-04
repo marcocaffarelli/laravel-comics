@@ -41,7 +41,7 @@ class ComicController extends Controller
         $validazione = $request->validate([
             'title' => 'required',
             'body' => 'required',
-            'cover' => 'nullable | image | max:150',
+            'cover' => 'nullable | mimes:jpeg,png,jpg,gif,svg | max:150',
             'art_by' => 'required',
             'written_by' => 'required',
             'series' => 'required',
