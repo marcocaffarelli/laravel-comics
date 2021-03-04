@@ -1,0 +1,82 @@
+.comics_vue{
+
+        h1{
+            text-align: center;
+            color: white;
+            background-color: blue;
+            width: max-content;
+            padding: 5px 20px;
+        }
+
+    .lista_uscite{
+        background-color: black;
+        ul{
+            position: relative;
+            margin-block: auto;
+            display: flex;
+            justify-content:flex-end;
+            margin-right: 15%;
+            li{
+                font-size: 10px;
+                list-style: none;
+                color: lightgrey;
+                a{
+                    text-decoration: none;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    #app{
+        .container_card{
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+            .card_comics{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 20%;
+                margin: 0 10px;
+                position: relative;
+                .card_image{
+                    height: 90%;
+                    width: 100%;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .card_title{
+                    height: 5%;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: start;
+                }
+                .available{
+                    height: 5%;
+                    color: blue;
+                    
+                }
+                h5{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: blue;
+                    color: white;
+                    padding: 1px 5px;
+                }
+            }
+        }
+
+    }
+
+}

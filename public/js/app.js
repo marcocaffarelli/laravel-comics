@@ -1924,9 +1924,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      comics: ""
+    };
+  },
   mounted: function mounted() {
+    var _this = this;
+
     console.log('Component mounted.');
+    axios.get('api/comics').then(function (response) {
+      console.log(response.data.response);
+      _this.comics = response.data.response;
+    })["catch"](function (error) {
+      console.log(error);
+    });
   }
 });
 
@@ -37626,28 +37643,32 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("Comics Title")]),
+  return _c(
+    "div",
+    { staticClass: "container_card" },
+    _vm._l(_vm.comics, function(comic, index) {
+      return index < 5
+        ? _c("div", { staticClass: "card_comics" }, [
+            _c("div", { staticClass: "card_image" }, [
+              _c("img", { attrs: { src: "storage/" + comic.cover, alt: "" } })
+            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v("\n                    Comics\n                ")
-            ])
+            _c("div", { staticClass: "card_title" }, [
+              _vm._v("\n            " + _vm._s(comic.title) + "\n        ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "available" }, [
+              _vm._v("\n            AVAILABLE NOW\n        ")
+            ]),
+            _vm._v(" "),
+            _c("h5", [_vm._v("COMIC BOOK")])
           ])
-        ])
-      ])
-    ])
-  }
-]
+        : _vm._e()
+    }),
+    0
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
