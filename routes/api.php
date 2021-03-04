@@ -23,3 +23,10 @@ Route::get('comics', function (){
         'response' => App\Comic::all()
     ], 200);
 });
+
+Route::get('articles', function (){
+    return response()->json([
+        'success' => true,
+        'response' => App\Article::all()
+    ], 200);
+});

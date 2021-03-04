@@ -28,7 +28,7 @@
         mounted() {
             console.log('Component mounted.')
             axios.get('api/comics').then(response => {
-                console.log(response.data.response);
+                //console.log(response.data.response);
                 this.comics = response.data.response;
             }).catch(error => {
                 console.log(error);

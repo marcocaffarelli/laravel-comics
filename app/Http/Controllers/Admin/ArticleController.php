@@ -46,8 +46,8 @@ class ArticleController extends Controller
             
         ]);
 
-        $article = Storage::put('article', $request->article);
-        $validazione['article'] = $article;
+        $cover = Storage::put('cover', $request->cover);
+        $validazione['cover'] = $cover;
 
         Article::create($validazione);  
 
@@ -94,8 +94,8 @@ class ArticleController extends Controller
             'message' => 'required',
         ]);
         
-        $article = Storage::put('article', $request->article);
-        $validazione['article'] = $article;
+        $cover = Storage::put('cover', $request->cover);
+        $validazione['cover'] = $cover;
 
         $article->update($validazione); 
 

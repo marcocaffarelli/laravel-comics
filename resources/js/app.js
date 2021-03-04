@@ -21,6 +21,8 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('comics-component', require('./components/ComicsComponent.vue').default);
+Vue.component('articles-component', require('./components/ArticlesComponent.vue').default);
+
 
 
 /**

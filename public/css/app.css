@@ -115,7 +115,7 @@
   justify-content: center;
   align-items: center;
   height: 80%;
-  width: 20%;
+  width: 260px;
   margin: 0 10px;
   position: relative;
 }
@@ -149,6 +149,44 @@
   background-color: #ec1923;
   color: white;
   padding: 1px 5px;
+}
+
+.comics_vue #app .container_articles {
+  width: 1200px;
+  margin: auto;
+}
+
+.comics_vue #app .container_articles h2 {
+  color: #ec1923;
+  font-weight: bold;
+}
+
+.comics_vue #app .container_articles .container_cards_articles {
+  padding: 10px;
+}
+
+.comics_vue #app .container_articles .container_cards_articles .card_articles {
+  width: 260px;
+  margin-right: 0 10px;
+}
+
+.comics_vue #app .container_articles .container_cards_articles .card_articles .card_article_image {
+  width: 100%;
+}
+
+.comics_vue #app .container_articles .container_cards_articles .card_articles .card_article_image img {
+  width: 100%;
+}
+
+.comics_vue #app .container_articles .container_cards_articles .card_articles .card_article_message {
+  color: #ec1923;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comics_vue #app .container_articles .container_cards_articles .card_articles .card_article_title {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*!

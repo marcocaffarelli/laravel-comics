@@ -17,6 +17,8 @@
     
     <div id="app">
         <comics-component></comics-component>
+        <articles-component></articles-component>
+
     </div>
 
 </div>
