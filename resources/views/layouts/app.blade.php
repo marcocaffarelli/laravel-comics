@@ -98,6 +98,18 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer>
+        <div class="container_footer">
+            <div class="parte_superiore_footer">
+                <ul class="d-flex">
+                    <li><img src="../img/spiderm.jpg" alt="">MARVEL COMICS</li>
+                    <li><img src="../img/iron.jpg" alt="">MARVEL MERCHANDISE</li>
+                    <li><img src="../img/cap.jpg" alt="">PRINT SUBSCRIPTIONS</li>
+                    <li><i class="fas fa-map-marker-alt"></i><span>COMIC SHOP LOCATOR</span></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
     </div>
 </body>
 </html>

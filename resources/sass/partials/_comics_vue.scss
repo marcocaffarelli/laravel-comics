@@ -83,11 +83,14 @@
         .container_articles{
             width: 1200px;
             margin: auto;
+            margin-top: 40px;
             h2{
                 color: rgb(236, 25, 35);
                 font-weight: bold;
+                margin-left: 70px;
             }
             .container_cards_articles{
+                margin-top: 40px;
                 .card_articles{
                     width: 260px;
                     margin-right: 10px;
@@ -107,6 +110,7 @@
                         font-weight: bold;
                         font-size: 20px;
                     }
+                    
                 }
             }
         }
