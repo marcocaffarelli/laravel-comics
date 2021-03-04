@@ -14,7 +14,7 @@ class PageController extends Controller
         return view('guests.posts.index');
     }
 
-    public function comics(){
+    public function comics_api(){
         return view('guests.comics');
     }
 
