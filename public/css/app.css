@@ -3,7 +3,7 @@
 .comics_vue h1 {
   text-align: center;
   color: white;
-  background-color: blue;
+  background-color: #ec1923;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -73,14 +73,14 @@
 
 .comics_vue #app .container_card .card_comics .available {
   height: 5%;
-  color: blue;
+  color: #ec1923;
 }
 
 .comics_vue #app .container_card .card_comics h5 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: blue;
+  background-color: #ec1923;
   color: white;
   padding: 1px 5px;
 }

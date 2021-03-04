@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <div id="app">
+    <div class="app_blade">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container d-flex">
                 <div>
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        LOGO
+                        <img src="../img/logo.jpg" alt="" style="width:100px">
                     </a>
                 </div>
 
