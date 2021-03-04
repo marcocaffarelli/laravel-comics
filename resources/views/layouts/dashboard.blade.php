@@ -23,11 +23,12 @@
 
 </head>
 <body>
+    @include('layouts.first_nav')
     <div class="dashboard">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    LOGO
+                    <img src="../img/logo.jpg" alt="" style="width:100px">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -81,7 +82,7 @@
                     <ul class="list-unstyled">
                        <li><a href="{{ route('admin.index') }}"><i class="fas fa-tachometer-alt fa-lg fa-fw"></i>Dashboard</a></li>
                        <li><a href="{{ route('admin.comics.index') }}"><i class="fas fa-book-open fa-lg fa-fw"></i>Comics</a></li>
-                       <li><a href="#"><i class="fas fa-folder-open fa-lg fa-fw"></i>Categories</a></li>
+                       <li><a href="{{ route('admin.articles.index') }}"><i class="fas fa-folder-open fa-lg fa-fw"></i>Articles</a></li>
                        <li><a href="#"><i class="fas fa-tag fa-lg fa-fw"></i>Tags</a></li>
                     </ul>
                 </div>

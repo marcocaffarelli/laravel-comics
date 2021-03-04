@@ -24,18 +24,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
+    @include('layouts.first_nav')
     <div class="app_blade">
-        <nav class="first_nav">
-            <div>
-                <ul class="d-flex">
-                    <li><img src="../img/logo.jpg" alt=""></li>
-                    <li><img src="../img/logo universe.png" alt=""></li>
-                    <li><img src="../img/logo store.png" alt=""></li>
-                    <li><img src="../img/marvel studio.png" alt=""></li>
-                    <li><img src="../img/logo cinematic.png" alt=""></li>
-                </ul>
-            </div>
-        </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container d-flex">
                 <div>

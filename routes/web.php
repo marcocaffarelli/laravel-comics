@@ -24,4 +24,6 @@ Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->
     
     Route::get('/', 'HomeController@index')->name('index');
     Route::resource('comics', 'ComicController');
+    Route::resource('articles', 'ArticleController');
+
 });
