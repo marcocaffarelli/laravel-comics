@@ -24,7 +24,7 @@
 </head>
 <body>
     @include('layouts.first_nav')
-    <div class="dashboard">
+    <div class="dashboard" style="width: 1440px; margin: auto;">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -76,19 +76,22 @@
             </div>
         </nav>
 
-        <main class="container py-4">
-            <div class="row">
-                <div class="col-xs-12 col-md-3 col-lg-2">
-                    <ul class="list-unstyled">
+        <main>
+            <div>
+                <div >
+                    <ul class="list-unstyled d-flex">
                        <li><a href="{{ route('admin.index') }}"><i class="fas fa-tachometer-alt fa-lg fa-fw"></i>Dashboard</a></li>
                        <li><a href="{{ route('admin.comics.index') }}"><i class="fas fa-book-open fa-lg fa-fw"></i>Comics</a></li>
                        <li><a href="{{ route('admin.articles.index') }}"><i class="fas fa-folder-open fa-lg fa-fw"></i>Articles</a></li>
                        <li><a href="#"><i class="fas fa-tag fa-lg fa-fw"></i>Tags</a></li>
                     </ul>
                 </div>
-                <main class="col-xs12 col-md-9 col-lg-10">
+                <main>
                     @yield('content')
                 </main>
+                <footer>
+                    @include('layouts.footer')
+                </footer>
             </div>
         </main>
     </div>

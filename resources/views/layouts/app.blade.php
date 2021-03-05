@@ -25,7 +25,7 @@
 </head>
 <body>
     @include('layouts.first_nav')
-    <div class="app_blade">
+    <div class="app_blade" style="width: 1440px; margin: auto;">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container d-flex">
                 <div>

@@ -3,7 +3,8 @@
 .first_nav {
   background-color: black;
   height: 50px;
-  width: 100%;
+  width: 1440px;
+  margin: auto;
 }
 
 .first_nav div ul {
@@ -35,7 +36,8 @@
 }
 
 .link_nav {
-  width: 100%;
+  width: 1440px;
+  margin: auto;
   height: 100%;
 }
 
@@ -59,6 +61,11 @@
 
 .link_nav ul li a:hover {
   text-decoration: none;
+}
+
+.comics_vue {
+  width: 1440px;
+  margin: auto;
 }
 
 .comics_vue h1 {
@@ -191,6 +198,11 @@
   font-size: 20px;
 }
 
+.single_comic {
+  width: 1440px;
+  margin: auto;
+}
+
 .single_comic .background_image {
   height: 500px;
   width: 100%;
@@ -307,6 +319,11 @@
   margin-right: 30px;
 }
 
+.home {
+  width: 1440px;
+  margin: auto;
+}
+
 .home .sfondo_title {
   height: 800px;
   width: auto;
@@ -315,6 +332,11 @@
   background-image: url(/images/sfondo1.jpg?16e73d016088aa484688a47cf6367037);
   background-size: cover;
   background-position-y: center;
+}
+
+footer {
+  width: 1440px;
+  margin: auto;
 }
 
 footer .container_footer {
