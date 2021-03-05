@@ -34,6 +34,43 @@ footer{
         }
         .parte_centrale_footer{
             height: 500px;
+            width: 1200px;
+            margin: auto;
+            align-items: center;
+            .link_footer{
+                flex-direction: column;
+                div{
+                
+                    div{
+                        ul{
+                            list-style: none;
+                            padding-left: 0;
+                            li{
+                                h4{
+                                    color: white;
+                                    margin: 10px 0,
+                                }
+                            }
+                            li{
+                                a{
+                                    color: grey;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                div{
+                    color: grey;
+                    margin-top: 15px;
+                    span{
+                        color: rgb(236, 25, 35);
+                    }
+                }
+            }
+            .parte_vuota{
+                width: 50%;
+            }
         }
         .parte_inferiore_footer{
             background-color: black;

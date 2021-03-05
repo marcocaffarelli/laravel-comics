@@ -234,6 +234,41 @@ footer .container_footer .parte_superiore_footer ul li:last-child {
 
 footer .container_footer .parte_centrale_footer {
   height: 500px;
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer {
+  flex-direction: column;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer div div ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer div div ul li h4 {
+  color: white;
+  margin: 10px 0;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer div div ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer div {
+  color: grey;
+  margin-top: 15px;
+}
+
+footer .container_footer .parte_centrale_footer .link_footer div span {
+  color: #ec1923;
+}
+
+footer .container_footer .parte_centrale_footer .parte_vuota {
+  width: 50%;
 }
 
 footer .container_footer .parte_inferiore_footer {
