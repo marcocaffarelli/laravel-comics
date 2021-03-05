@@ -3,7 +3,7 @@
 .first_nav {
   background-color: black;
   height: 50px;
-  width: 100vw;
+  width: 100%;
 }
 
 .first_nav div ul {
@@ -243,9 +243,12 @@ footer .container_footer .parte_centrale_footer .link_footer {
   flex-direction: column;
 }
 
+footer .container_footer .parte_centrale_footer .link_footer div div .first_ul {
+  padding-left: 0;
+}
+
 footer .container_footer .parte_centrale_footer .link_footer div div ul {
   list-style: none;
-  padding-left: 0;
 }
 
 footer .container_footer .parte_centrale_footer .link_footer div div ul li h4 {

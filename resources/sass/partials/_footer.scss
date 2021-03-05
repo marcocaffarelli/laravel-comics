@@ -42,9 +42,11 @@ footer{
                 div{
                 
                     div{
+                        .first_ul{
+                            padding-left: 0;
+                        }
                         ul{
                             list-style: none;
-                            padding-left: 0;
                             li{
                                 h4{
                                     color: white;
