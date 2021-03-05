@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PageController@home')->name('homepage');
 Route::get('comics_api', 'PageController@comics_api')->name('comics_api');
 
+Route::resource('comics', 'ComicController');
+
 Auth::routes();
 
 

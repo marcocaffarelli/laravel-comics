@@ -2,7 +2,7 @@
       <div class="container_card">
 
         <div class="card_comics" v-if="index < 5" v-for="(comic,index) in comics">
-            <a :href="`admin/comics/${comic.id}`" class="card_image">
+            <a :href="`comics/${comic.id}`" class="card_image">
                 <img :src="`storage/${comic.cover}`" alt="">
             </a>
                   

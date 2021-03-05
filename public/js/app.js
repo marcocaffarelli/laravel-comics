@@ -37771,7 +37771,7 @@ var render = function() {
               "a",
               {
                 staticClass: "card_image",
-                attrs: { href: "admin/comics/" + comic.id }
+                attrs: { href: "comics/" + comic.id }
               },
               [_c("img", { attrs: { src: "storage/" + comic.cover, alt: "" } })]
             ),
