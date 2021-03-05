@@ -191,6 +191,16 @@
   font-size: 20px;
 }
 
+.home .sfondo_title {
+  height: 800px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/sfondo1.jpg?16e73d016088aa484688a47cf6367037);
+  background-size: cover;
+  background-position-y: center;
+}
+
 footer .container_footer {
   background-image: url(/images/sfondo4.jpg?c2384e68c26f32fae2f41e72fc211b11);
   background-color: black;

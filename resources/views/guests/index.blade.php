@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Home</h1>
+<div class="home">
+    <div class="sfondo_title d-flex">
+    </div>
+</div>
 @endsection

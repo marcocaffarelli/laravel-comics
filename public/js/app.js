@@ -37767,9 +37767,14 @@ var render = function() {
     _vm._l(_vm.comics, function(comic, index) {
       return index < 5
         ? _c("div", { staticClass: "card_comics" }, [
-            _c("div", { staticClass: "card_image" }, [
-              _c("img", { attrs: { src: "storage/" + comic.cover, alt: "" } })
-            ]),
+            _c(
+              "a",
+              {
+                staticClass: "card_image",
+                attrs: { href: "admin/comics/" + comic.id }
+              },
+              [_c("img", { attrs: { src: "storage/" + comic.cover, alt: "" } })]
+            ),
             _vm._v(" "),
             _c("div", { staticClass: "card_title" }, [
               _vm._v("\n            " + _vm._s(comic.title) + "\n        ")
