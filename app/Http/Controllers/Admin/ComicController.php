@@ -110,8 +110,6 @@ class ComicController extends Controller
             'rated' => 'required',
         ]);
         
-        $cover = Storage::put('cover', $request->cover);
-        $validazione['cover'] = $cover;
 
         $comic->update($validazione); 
 

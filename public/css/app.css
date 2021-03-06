@@ -245,6 +245,7 @@
 .comics_vue #app .container_classics .container_cards_classics .card_classics .card_classic_title {
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 6px;
 }
 
 .single_comic {

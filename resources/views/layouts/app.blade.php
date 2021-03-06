@@ -37,7 +37,7 @@
                 <div class="link_nav">
                     <ul class="d-flex">
                         <li><a href="#">CHARACTERS</a></li>
-                        <li><a href="{{route('comics_api')}}">COMICS</a></li>
+                        <li><a href="{{route('comics_api')}}" class="{{Route::currentRouteName() === 'comics_api' ? 'active' : '' }}">COMICS</a></li>
                         <li><a href="#">MOVIES</a></li>
                         <li><a href="#">TV</a></li>
                         <li><a href="#">GAMES</a></li>

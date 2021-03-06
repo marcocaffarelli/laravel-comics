@@ -89,9 +89,7 @@ class ClassicController extends Controller
             'title' => 'required',
             'cover' => 'nullable | mimes:jpeg,png,jpg,gif,svg | max:150',
         ]);
-        
-        $cover = Storage::put('cover', $request->cover);
-        $validazione['cover'] = $cover;
+
 
         $classic->update($validazione); 
 

@@ -19,14 +19,7 @@
                 @error('body')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
-                 <div class="form-group">
-                  <label for="cover"></label>
-                  <input type="file" class="form-control-file" name="cover" id="cover" placeholder="Inserisci un immagine" aria-describedby="fileHelpId">
-                  <small id="coverHelper" class="form-text text-muted">Inserisci un immagine</small>
-                </div>
-                @error('cover')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
+
                 <div>
                     <label for="message">MESSAGE</label><br>
                     <input type="text" id="message" name="message" placeholder="Art by" value="{{$article->message}}">

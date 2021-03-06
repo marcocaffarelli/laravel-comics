@@ -93,13 +93,10 @@ class ArticleController extends Controller
             'cover' => 'nullable | mimes:jpeg,png,jpg,gif,svg | max:150',
             'message' => 'required',
         ]);
-        
-        $cover = Storage::put('cover', $request->cover);
-        $validazione['cover'] = $cover;
 
         $article->update($validazione); 
-
         return redirect()->route('admin.articles.index');
+
     }
 
     /**
