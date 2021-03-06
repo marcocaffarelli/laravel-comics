@@ -30,3 +30,10 @@ Route::get('articles', function (){
         'response' => App\Article::all()
     ], 200);
 });
+
+Route::get('classics', function (){
+    return response()->json([
+        'success' => true,
+        'response' => App\Classic::all()
+    ], 200);
+});

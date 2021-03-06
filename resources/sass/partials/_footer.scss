@@ -7,11 +7,11 @@ footer{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
-        height: 800px;
+        height: 500px;
         width: 100%;
         .parte_superiore_footer{
             background-color: rgb(236, 25, 35);
-            height: 200px;
+            height: 100px;
             width: 100%;
             ul{
                 height: 100%;
@@ -35,7 +35,7 @@ footer{
             }
         }
         .parte_centrale_footer{
-            height: 500px;
+            height: 350px;
             width: 1200px;
             margin: auto;
             align-items: center;
@@ -52,13 +52,15 @@ footer{
                             li{
                                 h4{
                                     color: white;
-                                    margin: 10px 0,
+                                    margin: 5px 0;
+                                    font-size: 1rem;
                                 }
                             }
                             li{
                                 a{
                                     color: grey;
                                     text-decoration: none;
+                                    font-size: 0.8rem;
                                 }
                             }
                         }
@@ -66,7 +68,7 @@ footer{
                 }
                 div{
                     color: grey;
-                    margin-top: 15px;
+                    font-size: 0.8rem;
                     span{
                         color: rgb(236, 25, 35);
                     }
@@ -78,7 +80,7 @@ footer{
         }
         .parte_inferiore_footer{
             background-color: black;
-            height: 100px;
+            height: 50px;
             
             .parte_inferiore_container{
                 justify-content: space-between;
@@ -89,10 +91,10 @@ footer{
                 div{
                     &:first-child{
                         color:white;
-                        border: 3px solid rgb(236, 25, 35);
-                        padding: 10px;
+                        border: 2px solid rgb(236, 25, 35);
+                        padding: 3px 8px;
                         font-weight: bold;
-                        font-size: 20px;
+                        font-size: 16px;
                     } 
                     &:last-child{
                         color: rgb(236, 25, 35);

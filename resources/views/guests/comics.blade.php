@@ -3,7 +3,7 @@
 @section('content')
 <div class="comics_vue">
 
-        <h1>COMICS & GRAPHIC NOVELS</h1>
+        <h2>COMICS & GRAPHIC NOVELS</h2>
 
     <div class="lista_uscite">
         <ul>
@@ -18,7 +18,7 @@
     <div id="app">
         <comics-component></comics-component>
         <articles-component></articles-component>
-
+        <classics-component></classics-component>
     </div>
 
 </div>

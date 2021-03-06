@@ -1,6 +1,6 @@
 <template>
     <div class="container_articles">
-        <h2>MUST READS</h2>
+        <h3>MUST READS</h3>
         <div class="container_cards_articles d-flex">
             <div class="card_articles " v-if="index < 3" v-for="(article,index) in articles">
                 <div class="card_article_image">
@@ -31,7 +31,7 @@
         mounted() {
             console.log('Component mounted.')
             axios.get('api/articles').then(response => {
-                console.log(response);
+                //console.log(response);
                 this.articles = response.data.response;
             }).catch(error => {
                 console.log(error);
