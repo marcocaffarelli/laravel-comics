@@ -83,6 +83,7 @@
                        <li style="padding: 0 10px;"><a href="{{ route('admin.index') }}" style="color: rgb(236, 25, 35);"><i class="fas fa-tachometer-alt fa-lg fa-fw"></i>Dashboard</a></li>
                        <li style="padding: 0 10px;"><a href="{{ route('admin.comics.index') }}" style="color: rgb(236, 25, 35);"><i class="fas fa-book-open fa-lg fa-fw"></i>Comics</a></li>
                        <li style="padding: 0 10px;"><a href="{{ route('admin.articles.index') }}" style="color: rgb(236, 25, 35);"><i class="fas fa-folder-open fa-lg fa-fw"></i>Articles</a></li>
+                       <li style="padding: 0 10px;"><a href="{{ route('admin.classics.index') }}" style="color: rgb(236, 25, 35);"><i class="fas fa-print fa-lg fa-fw"></i>Classics</a></li>
                     </ul>
                 </div>
                 <main>
