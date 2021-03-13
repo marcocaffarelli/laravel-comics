@@ -63,6 +63,11 @@
   text-decoration: none;
 }
 
+.link_nav ul li .active {
+  border-bottom: 5px solid #ec1923 !important;
+  padding-bottom: 30px;
+}
+
 .comics_vue {
   width: 1440px;
   margin: auto;

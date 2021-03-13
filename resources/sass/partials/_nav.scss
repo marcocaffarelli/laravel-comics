@@ -18,6 +18,10 @@
                     text-decoration: none;
                 }
             }
+            .active{
+                border-bottom: 5px solid rgb(236, 25, 35) !important;
+                padding-bottom: 30px;
+            }
         }
     }
 }
